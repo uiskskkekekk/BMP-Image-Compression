@@ -85,7 +85,6 @@ class BMPCompressor:
             return img_array
 
     def _calculate_mse(self, original, decompressed):
-        """計算均方誤差 (MSE)"""
         return np.mean((original.astype(np.float32) - decompressed.astype(np.float32)) ** 2)
 
 def main():
